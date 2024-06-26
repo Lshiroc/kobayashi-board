@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes animate {
+    0% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        filter: blur(5px);
+        transform: scaleX(0);
+    }
+}
+
+@keyframes animate_reveal {
+    0% {
+        filter: blur(5px);
+        transform: scaleX(0);
+    }
+
+    100% {
+        filter: blur(0px);
+        transform: scaleX(1);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.dot {
+    
+    .original {
+        animation-name: animate;
+        animation-duration: .1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
+
+    .reveal {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform: scaleX(0);
+        animation-name: animate_reveal;
+        animation-duration: .2s;
+        animation-delay: .15s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }
+}
+
+.dot1 {
+    .original {
+        animation-delay: 0s;
+    }
+
+    .reveal {
+        animation-delay: .2s;
+    }
+}
+
+.dot2 {
+    .original {
+        animation-delay: .5s;
+    }
+
+    .reveal {
+        animation-delay: .7s;
+    }
+}
+
+.dot3 {
+    .original {
+        animation-delay: 1s;
+    }
+
+    .reveal {
+        animation-delay: 1.2s;
+    }
+}
+
+.dot4 {
+    .original {
+        animation-delay: 1.5s;
+    }
+
+    .reveal {
+        animation-delay: 1.7s;
+    }
+}
+
+.dot5 {
+    .original {
+        animation-delay: 2s;
+    }
+
+    .reveal {
+        animation-delay: 2.2s;
+    }
+}
