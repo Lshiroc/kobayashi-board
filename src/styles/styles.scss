@@ -29,10 +29,21 @@
     }
 }
 
+@keyframes showID {
+    0% {
+        bottom: 20px;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 48px;
+        opacity: 1;
+    }
+}
+
 .dot {
     
     .original {
-        // animation-name: animate;
         animation-duration: .1s;
         animation-timing-function: ease-in;
         animation-fill-mode: forwards;
@@ -44,7 +55,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
         transform: scaleX(0);
-        // animation-name: animate_reveal;
         animation-duration: .2s;
         animation-delay: .15s;
         animation-timing-function: ease-in;
@@ -101,4 +111,14 @@
     .reveal {
         animation-delay: 2.2s;
     }
+}
+
+#myID {
+    animation-duration: .4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 2.7s;
+    bottom: 20px;
+    opacity: 0;
 }
