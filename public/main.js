@@ -54,12 +54,12 @@ function displayPattern() {
         reveal.style.animationName = "animate_reveal";
     })
 
-    const audio = new Audio('./pop.wav');
-    playSoundWithDelay(audio, 200);
-    playSoundWithDelay(audio, 700);
-    playSoundWithDelay(audio, 1200);
-    playSoundWithDelay(audio, 1700);
-    playSoundWithDelay(audio, 2200);
+    // const audio = new Audio('./pop.wav');
+    // playSoundWithDelay(audio, 200);
+    // playSoundWithDelay(audio, 700);
+    // playSoundWithDelay(audio, 1200);
+    // playSoundWithDelay(audio, 1700);
+    // playSoundWithDelay(audio, 2200);
 
     document.querySelector('#myID').style.animationName = "showID";
 }
